@@ -1,4 +1,3 @@
-const API_URL = getHostURL();
 
 $(document).ready(function () {
   // get user id from url query
@@ -51,12 +50,4 @@ function addStickers(stickers) {
 
 function weSuck() {
   alert('user not found... and we suck')
-}
-
-function getHostURL() {
-  if (window.location.host.indexOf('localhost') != -1) {
-    return 'http://localhost:3000';
-  } else {
-    return 'https://sticker-mania.herokuapp.com';
-  }
 }
